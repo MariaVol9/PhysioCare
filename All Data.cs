@@ -144,16 +144,9 @@ namespace Diploma_Final
             c3.Searchby(comboBox2, textBox1, dataGridView1, s1, s2);
         }
 
-
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button4_Click_1(object sender, EventArgs e)
         {
-            /*  int i;
+          
               string[] features = new string[9];
               features[0] = "Fname";
               features[1] = "Lname";
@@ -227,16 +220,6 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Button7_Click(object sender, EventArgs e)
         {
             Form2 frm = new Form2();
@@ -291,21 +274,6 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
 
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button10_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button11_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button3_Click_1(object sender, EventArgs e)
         {
             string s1 = "physiotherapist";
@@ -342,15 +310,6 @@ namespace Diploma_Final
             c3.Searchby(comboBox2, textBox1, dataGridView1, s1, s2);
         }
 
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button5_Click_1(object sender, EventArgs e)
         {
@@ -379,15 +338,6 @@ namespace Diploma_Final
             }
         }
 
-        private void ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button12_Click(object sender, EventArgs e)
         {
@@ -402,9 +352,5 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
 
-        private void TextBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
