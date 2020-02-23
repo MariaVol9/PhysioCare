@@ -55,11 +55,6 @@ namespace Diploma_Final
         string n1 = "";
         int pass = 0;
 
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void apps()
         {
             string[] stra2 = new string[8];
@@ -230,8 +225,7 @@ namespace Diploma_Final
                     if (i == 4)
                     {
                         date7 = DateTime.Parse(values[4]);
-                        value4=date7.ToString("HH:mm:ss");
-                        
+                        value4=date7.ToString("HH:mm:ss");                
                     }
                     if (i == 5)
                     {
@@ -291,19 +285,9 @@ namespace Diploma_Final
                     mySqlConnection2.Open();
                     n = mySqlCommand2.ExecuteNonQuery();
                     MessageBox.Show("Inserted  " + n.ToString() + " appointment");
-                    mySqlConnection2.Close();
-                   
-                
-            }
-
-           
-
-
-            
-               
-            
+                    mySqlConnection2.Close();          
+            }       
         }
-
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
@@ -397,8 +381,7 @@ namespace Diploma_Final
             {
                 data = listBoxItem.ToString();
                 passport = data.Substring(0, data.IndexOf("-"));
-            }
-           
+            }     
 
         }
         int place2 = 0;
