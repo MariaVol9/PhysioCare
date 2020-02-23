@@ -45,24 +45,13 @@ namespace Diploma_Final
             richTextBox1.SelectionFont = new Font("Verdana", int.Parse(comboBox2.SelectedItem.ToString()), FontStyle.Regular);
             else
                 richTextBox1.SelectionFont = new Font("Verdana", 12, FontStyle.Regular);
-           
-         
-           
+        
         }
-
 
         Class1 c2 = new Class1();
         string path2 = @".rtf";
         string help = @"\";
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         int flag = 0;
         int flag2 = 0;
         string result2 = "";
@@ -95,11 +84,9 @@ namespace Diploma_Final
         {
 
 
-
-
             var path = @"C:\Users\ivanf\Desktop\Diploma Final3\Diploma Final\bin\Debug\";
             string value = comboBox1.SelectedItem.ToString();
-            // 
+  
 
             var fileName = String.Format("{0}{1}{2}",
             Path.GetFileNameWithoutExtension(path), Path.GetFileNameWithoutExtension(value), Path.GetExtension(path2));
@@ -114,9 +101,7 @@ namespace Diploma_Final
         private void button3_Click(object sender, EventArgs e)
         {
 
-
             richTextBox1.Clear();
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -161,10 +146,6 @@ namespace Diploma_Final
 
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
         string strfile = "";
         string value3 = "";
         string value4 = "";
@@ -205,31 +186,8 @@ namespace Diploma_Final
             }
          
           c2.Addapps(datenew, listBox3, passport);
-            label2.Text = value4;
-           
+            label2.Text = value4;  
             
-        }
-
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-       
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-
-
-
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
@@ -278,16 +236,9 @@ namespace Diploma_Final
             {
 
                 listBox2.Items.Add(f.Name);
-
-            }
-
-       
+            }   
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         string checkpass = "";
         private void Button7_Click(object sender, EventArgs e)
@@ -320,36 +271,9 @@ namespace Diploma_Final
                 MessageBox.Show("Please, check your input");
 
             }
-
-
         }
 
 
-
-        private void ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Chart2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void CheckChart()
         {
             DateTime d12 = new DateTime();
@@ -402,11 +326,6 @@ namespace Diploma_Final
             mySqlDataReader.Close();
             mySqlConnection.Close();
 
-
-        }
-        private void Chart1_Click(object sender, EventArgs e)
-        {
-
         }
 
         int pain = 0;
@@ -414,16 +333,6 @@ namespace Diploma_Final
         int control = 0;
         int movement = 0;
         int flexibility = 0;
-
-        private void Button8_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void TextBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -441,31 +350,7 @@ namespace Diploma_Final
                 richTextBox1.SelectionFont = new Font("Verdana", 12, FontStyle.Regular);
         }
 
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button6_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button6_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MonthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
-        private void RichTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void Button8_Click_1(object sender, EventArgs e)
         {
             Form4 frm = new Form4();
@@ -514,10 +399,6 @@ namespace Diploma_Final
             mySqlConnection2.Close();
         }
 
-        private void Button13_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void RadioButton5_CheckedChanged(object sender, EventArgs e)
         {
@@ -572,11 +453,7 @@ namespace Diploma_Final
             CheckChart();
         }
 
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+       
         private void Button14_Click(object sender, EventArgs e)
         {
             textBox3.Text = "";
@@ -586,16 +463,6 @@ namespace Diploma_Final
 
             textBox6.Text = "";
             textBox7.Text = "";
-
-        }
-
-        private void TextBox3_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label15_Click(object sender, EventArgs e)
-        {
 
         }
 
