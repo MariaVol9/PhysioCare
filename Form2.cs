@@ -64,11 +64,10 @@ namespace Diploma_Final
          }
             mySqlDataReader3.Close();
            
-            mySqlConnection3.Close();
-
-           
+            mySqlConnection3.Close();          
 
         }
+        
         Class1 c1 = new Class1();
         string data = "";
         string passport = "";
@@ -362,24 +361,6 @@ namespace Diploma_Final
             label1.Text = birthday.ToString() + " years";
             flag = 0;
            
-
-            
-
-        }
-
-        private void MaskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MaskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -390,10 +371,6 @@ namespace Diploma_Final
             textBox8.Text = startDate3;
         }
 
-        private void MaskedTextBox5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
 
         private void Button5_Click(object sender, EventArgs e)
         {
@@ -540,11 +517,7 @@ namespace Diploma_Final
             }
             mySqlConnection.Close();
         }
-
-        private void Button9_Click(object sender, EventArgs e)
-        {
-   
-        }
+    
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -552,49 +525,11 @@ namespace Diploma_Final
         
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button10_Click(object sender, EventArgs e)
         {
             richTextBox1.SaveFile(@"C:\Users\ivanf\Desktop\Diploma Final3\Diploma Final\bin\Debug\Home_exercises.rtf");
             Process.Start(@"C:\Users\ivanf\Desktop\Diploma Final3\Diploma Final\bin\Debug\Home_exercises.rtf");
-
-
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
+        }    
 
         private void button11_Click(object sender, EventArgs e)
         {
@@ -621,11 +556,6 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
         string datenew = "";
-       
-        private void Button13_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void Button14_Click(object sender, EventArgs e)
         {
@@ -648,16 +578,6 @@ namespace Diploma_Final
             } 
         }
 
-        private void ListBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button15_Click(object sender, EventArgs e)
         {
             richTextBox1.SelectedText += comboBox3.Text;
@@ -675,11 +595,6 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
 
-        private void TextBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button17_Click(object sender, EventArgs e)
         {
             int n;
@@ -694,27 +609,6 @@ namespace Diploma_Final
             n = mySqlCommand.ExecuteNonQuery();
             MessageBox.Show(n.ToString() + " row was deleted");
             mySqlConnection.Close();
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RichTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Button18_Click(object sender, EventArgs e)
@@ -747,10 +641,6 @@ namespace Diploma_Final
             frm.Show(this);
         }
 
-        private void Panel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Button23_Click(object sender, EventArgs e)
         {
@@ -774,19 +664,7 @@ namespace Diploma_Final
             {
                 comboBox3.Items.Add(mySqlDataReader[0].ToString());
 
-            }
-           
-            
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox11_TextChanged(object sender, EventArgs e)
-        {
-
+            }          
         }
 
         private void Button24_Click(object sender, EventArgs e)
@@ -840,25 +718,8 @@ namespace Diploma_Final
 
             }
             
-
         }
-        private void listBox3_DoubleClick(object sender, MouseEventArgs e)
-        {
-           
-           
-        }
-
-            private void PictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-      
+     
         private void Button26_Click(object sender, EventArgs e)
         {
             int n;
@@ -896,27 +757,7 @@ namespace Diploma_Final
             mySqlCommand4.ExecuteNonQuery();
             mySqlConnection4.Close();
 
-
         }
 
-        private void Button27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label27_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
