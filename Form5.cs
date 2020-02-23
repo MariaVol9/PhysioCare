@@ -221,14 +221,8 @@ namespace Diploma_Final
             dataGridView2.DataSource = dt2;
             label2.Text = num2.ToString();
             label4.Text = sum3.ToString();
-           // return table_inv;
         }
 
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -252,12 +246,9 @@ namespace Diploma_Final
             SqlConnection mySqlConnection3 = new SqlConnection("server=(local)\\SQLEXPRESS;database=1;Integrated Security=SSPI;");
             SqlCommand mySqlCommand3 = mySqlConnection3.CreateCommand();
             mySqlConnection3.Open();
-           // mySqlCommand3.CommandText = "create table " + tablename + "(docs varchar(50))";
-
             mySqlCommand3.CommandText = "create table " + textBox1.Text + "(Code int,Name varchar(50),Company varchar(50),Size int,Price int,Number int,Comments varchar(50))";
             mySqlCommand3.ExecuteNonQuery();
             mySqlConnection3.Close();
-            //}
 
         }
         private void dataGridView1_DoubleClick(object sender, MouseEventArgs e)
@@ -296,7 +287,6 @@ namespace Diploma_Final
                 
                 int place = row.Index;
                 
-
                 for (i = 0; i < 7; i++)
                 {
                     values77[i] = dataGridView2.Rows[place].Cells[i].Value.ToString();
@@ -313,13 +303,7 @@ namespace Diploma_Final
             SqlConnection mySqlConnection4 = new SqlConnection("server=(local)\\SQLEXPRESS;database=1;Integrated Security=SSPI;");
             SqlCommand mySqlCommand4 = mySqlConnection4.CreateCommand();
 
-            /*mySqlCommand.CommandText = " select Code from inventory where Code=" + strn + "";
-            mySqlConnection.Open();
-            SqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
-          
-            while (mySqlDataReader.Read())
-            {
-            */
+ 
                 mySqlCommand3.CommandText = " insert into inventory  values('" + values77[0] + "','" + values77[1] + "','" + values77[2] + "','" + values77[3] + "','" + values77[4] + "','" + textBox3.Text + "','" + values77[6] + "','" + datenew7 + "','" + values77[8] + "'," + value + ")";
                 
                 mySqlConnection3.Open(); 
@@ -329,17 +313,13 @@ namespace Diploma_Final
                 mySqlCommand4.CommandText = " update " + newst + "  set Number=Number-"+numnew+" where Code= " + strn + "";
                 mySqlConnection4.Open();
                 mySqlCommand4.ExecuteNonQuery();
-                mySqlConnection4.Close();
-          //  }
-          //  mySqlDataReader.Close();
-           // mySqlConnection.Close();
+                mySqlConnection4.Close();     
         }
         string passport;
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-            c3.Search(listBox1, textBox2, radioButton1, radioButton2, radioButton3);
-           
+            c3.Search(listBox1, textBox2, radioButton1, radioButton2, radioButton3);    
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -359,7 +339,6 @@ namespace Diploma_Final
                 Image img = Image.FromFile(strpath);
                 img = resizeImage(img, new Size(100, 100));
                 dataGridView1.Rows[place2].Cells[1].Value = imageToByteArray(img);
-
             }
             SqlConnection mySqlConnection = new SqlConnection("server=(local)\\SQLEXPRESS;database=1;Integrated Security=SSPI;");
             SqlCommand mySqlCommand = mySqlConnection.CreateCommand();
@@ -427,24 +406,9 @@ namespace Diploma_Final
                 n = mySqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Inserted  " + n.ToString() + " row");
                 mySqlConnection.Close();
-
-              /*  SqlConnection mySqlConnection2 = new SqlConnection("server=(local)\\SQLEXPRESS;database=1;Integrated Security=SSPI;");
-                SqlCommand mySqlCommand2 = mySqlConnection2.CreateCommand();
-                mySqlConnection2.Open();
-                mySqlCommand2.CommandText = "INSERT INTO inventory  (Code,Name,Company,Size,Price,Number,Comments,type) Values(" +code_random+ ",'" + values[1] + "','" + values[2] + "','" + values[3] + "','" + values[4] + "',0,'" + values[6] + "','"+newst+"')";
-              
-                mySqlCommand2.ExecuteNonQuery();
-                
-                mySqlConnection2.Close();*/
-               
             }
-
         }
 
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -454,9 +418,7 @@ namespace Diploma_Final
                 value = value.Substring(0, value.IndexOf("-"));
                
             }
-        }
-
-        
+        }      
 
         private void Button6_Click(object sender, EventArgs e)
         {
@@ -530,30 +492,17 @@ namespace Diploma_Final
                         dt2.Rows.Add(dr2);
                    dr2 = dt2.NewRow();
                     }
-
                     
-
                 }
                 
                 mySqlDataReader2.Close();
             }
                 mySqlDataReader.Close();
-                /* SqlDataReader mySqlDataReader3 = mySqlCommand.ExecuteReader();
-
-                 while (mySqlDataReader3.Read())
-                 {
-                     num = int.Parse(mySqlDataReader3[5].ToString());
-                     num2 += num;
-                     sum = int.Parse(mySqlDataReader3[4].ToString());
-                     sum2 = num * sum;
-                     sum3 += sum2;
-                 }
-                 mySqlDataReader3.Close();*/
+               
                 mySqlConnection.Close();
                 dataGridView2.DataSource = dt2;
                 label2.Text = num2.ToString();
                 label4.Text = sum3.ToString();
-                // Statistics_purch();
             
         }
 
@@ -597,24 +546,5 @@ namespace Diploma_Final
             frm.Show(this);
         }
 
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
