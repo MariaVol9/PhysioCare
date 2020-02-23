@@ -152,8 +152,7 @@ namespace Diploma_Final
             SqlConnection mySqlConnection = new SqlConnection("server=(local)\\SQLEXPRESS;database=1;Integrated Security=SSPI;");
             SqlCommand mySqlCommand = mySqlConnection.CreateCommand();
             mySqlConnection.Open();
-            //  mySqlCommand.CommandText = "INSERT INTO  appointments (passport1,date,start_time) Values(" + passport1 + ",'" + date4.ToShortDateString() + "','" + value4 + "','" + value5 + "','" + comboBox1.SelectedItem.ToString() + "','" + type + "')";
-              mySqlCommand.CommandText = "INSERT INTO  appointments Values(" + passport1 + ",'" +value3 + "','" + value4 + "','"+value5+"','"+ comboBox1.SelectedItem.ToString() + "','"+type+"')";
+            mySqlCommand.CommandText = "INSERT INTO  appointments Values(" + passport1 + ",'" +value3 + "','" + value4 + "','"+value5+"','"+ comboBox1.SelectedItem.ToString() + "','"+type+"')";
 
             n = mySqlCommand.ExecuteNonQuery();
             MessageBox.Show(n.ToString() + " row was inserted");
@@ -224,15 +223,12 @@ namespace Diploma_Final
                                 tt = mySqlDataReader[2].ToString() + "-" + mySqlDataReader[3].ToString() + " "+mySqlDataReader2[0].ToString() +" "+ mySqlDataReader2[1].ToString();
                                 
                                 listBox2.Items.Add(tt);
-                                // listBox2.Items.Add(mySqlDataReader[0].ToString() + "-" + mySqlDataReader2[1].ToString() + mySqlDataReader2[2].ToString() + mySqlDataReader[1].ToString().Substring(0, 10) + mySqlDataReader[2].ToString().Substring(0, 5) + " " + mySqlDataReader[3].ToString().Substring(0, 5) + " " + mySqlDataReader[4].ToString()+"\n");
                             }
                            
                              mySqlDataReader2.Close();
                             mySqlConnection2.Close();
                         }
-                           
-                           
-                       
+                                                
                         mySqlDataReader.Close();
                         mySqlConnection.Close();
 
@@ -269,24 +265,10 @@ namespace Diploma_Final
             
             mySqlConnection.Close();
             
-            MessageBox.Show("The appointment was removed successfully");
-          /*  foreach (var listBoxItem in listBox2.SelectedItems)
-            {
-                listBox2.Items.Remove(listBoxItem);
-
-            }*/
+            MessageBox.Show("The appointment was removed successfully");     
         }
 
-        private void Form6_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
         private void Button9_Click(object sender, EventArgs e)
         {
             Form2 frm = new Form2();
@@ -315,21 +297,6 @@ namespace Diploma_Final
         {
             Form7 frm = new Form7();
             frm.Show(this);
-        }
-
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
