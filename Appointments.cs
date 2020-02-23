@@ -360,15 +360,6 @@ namespace Diploma_Final
             mySqlConnection.Close();
         }
 
-        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-
-        }
         string data = "";
         string passport = "";
         string fname = "";
@@ -409,7 +400,7 @@ namespace Diploma_Final
              
             }
             d155= monthCalendar1.SelectionRange.Start.Date;
-                d157 = d155.ToString("yyyy-MM-dd");
+            d157 = d155.ToString("yyyy-MM-dd");
         }
     }
 }
