@@ -15,8 +15,7 @@ namespace Diploma_Final
 
         public void Search(ListBox listBox1, TextBox textBox1, RadioButton radioButton1, RadioButton radioButton2, RadioButton radioButton3)
         {
-
-            
+       
             int flag = 0;
             string strname = "";
 
